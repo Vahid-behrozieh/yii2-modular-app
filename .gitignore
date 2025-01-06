@@ -1,6 +1,32 @@
+# Ignore everything in the assets folder
 assets/*
+# But do not ignore the .gitignore file in the assets folder
 !assets/.gitignore
+
+# Ignore everything in the protected/runtime folder
 protected/runtime/*
+# But do not ignore the .gitignore file in the protected/runtime folder
 !protected/runtime/.gitignore
+
+# Ignore all .db files in the protected/data folder
 protected/data/*.db
+
+# Ignore all views in the classic theme
 themes/classic/views/
+
+# Ignore all log files
+*.log
+
+# Ignore environment settings
+.env
+.env.local
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore composer.lock (optional, depends on project needs)
+composer.lock
