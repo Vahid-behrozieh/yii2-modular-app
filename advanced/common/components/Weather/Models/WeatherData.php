@@ -2,7 +2,7 @@
 
 namespace common\components\Weather\Models;
 
-use yiiase\Model;
+use yii\base\Model;
 
 class WeatherData extends Model
 {
