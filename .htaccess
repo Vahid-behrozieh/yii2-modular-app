@@ -1,0 +1,11 @@
+
+Options -Indexes
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{ENV:REDIRECT_STATUS} . [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+
+RewriteRule ^(.*)$ advanced/frontend/web/$1 [L]
